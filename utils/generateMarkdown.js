@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'none') {
-    return `[![License](https://img.shields.io/badge/License-${license}-blue.svg)]`
+    return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
   } 
   return ""
 };
@@ -25,7 +25,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'none') {
-    return `## License`
+    return `  ## License`
   }
   return ''
   
@@ -38,13 +38,14 @@ function generateMarkdown(data) {
   ## Description 
   ${data.description}
   ## Table of Contents 
-  -[Installation](#installation)
-  -[Usage](#usage)
-  -[Contribution](#contribution)
-  -[Test](#test)
-  -[Username](#username)
-  -[Email](#email)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contribution](#contribution)
+  - [Test](#test)
+  - [Username](#username)
+  - [Email](#email)
   ## Installation 
+  This is a step by step instruction on how to get the development environment running.
   ${data.installation}
   ## Usage 
   ${data.usage}
@@ -55,8 +56,10 @@ function generateMarkdown(data) {
   \n${renderLicenseSection(data.license)}
   ${renderLicenseLink(data.license)}
   ## Username 
+  This is my GitHub username:
   ${data.username}
   ## Email 
+  This is my email address:
   ${data.email}
 
 `

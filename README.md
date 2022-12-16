@@ -1,27 +1,30 @@
-# project
-  [![License](https://img.shields.io/badge/License-Boost-blue.svg)]
+# Weekly Task Manager
+  ![License](https://img.shields.io/badge/License-MIT-blue.svg)
   ## Description 
-  s
+  To keep students motivated and boost productivity.
   ## Table of Contents 
-  -[Installation](#installation)
-  -[Usage](#usage)
-  -[Contribution](#contribution)
-  -[Test](#test)
-  -[Username](#username)
-  -[Email](#email)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contribution](#contribution)
+  - [Test](#test)
+  - [Username](#username)
+  - [Email](#email)
   ## Installation 
-  d
+  This is a step by step instruction on how to get the development environment running.
+  npm i
   ## Usage 
-  s
+  Have fun!
   ## Contribution 
-  d
+  Work Hard.
   ## Test 
-  s
+  npm run
   
-## License
-  (https://www.boost.org/LICENSE_1_0.txt)
+  ## License
+  (https://opensource.org/licenses/MIT)
   ## Username 
-  s
+  This is my GitHub username:
+  Val-gee
   ## Email 
-  d
+  This is my email address:
+  val@test.com
 
