@@ -10,13 +10,11 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license !== 'none') {
-    return ""
-  } else if (license == Boost){
+  if (license == 'Boost'){
     return `(https://www.boost.org/LICENSE_1_0.txt)`
-  } else if (license == Apache-2.0) {
+  } else if (license == 'Apache-2.0') {
     return `(https://opensource.org/licenses/Apache-2.0)`
-  } else if (license == MIT) {
+  } else if (license == 'MIT') {
     return `(https://opensource.org/licenses/MIT)`
   } else {
     return ''
@@ -36,7 +34,7 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ${renderLicenseBadge()}
+  ${renderLicenseBadge(data.license)}
   ## Description 
   ${data.description}
   ## Table of Contents 
@@ -54,8 +52,8 @@ function generateMarkdown(data) {
   ${data.contribution}
   ## Test 
   ${data.test}
-  \n${renderLicenseSection()}
-  ${renderLicenseLink()}
+  \n${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
   ## Username 
   ${data.username}
   ## Email 
